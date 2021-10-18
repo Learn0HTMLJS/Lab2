@@ -76,6 +76,11 @@ h1{
     text-align: left;
 }
 
+.NotMainText{
+    font-family: GothamProLight;
+    color: #000000;
+}
+
 :root{
     --MainText_color: #647382;
 }
@@ -104,15 +109,18 @@ h1{
 }
 
 .div_main{
+    margin-top: 10px;
+    display: -webkit-flex;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.div1{
-    flex-basis: 50%;
-}
-
-.div2{
-    flex-basis: 505;
+.divCard{
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #div1{
@@ -129,10 +137,15 @@ h1{
     padding-top: 10px;
 }
 
-.hrefimg{
+#img2{
+    width: 98%;
+    left: 0px;
+    top: 0px;
+}
 
-    width: 25%;
-    height: 25%;
+.hrefimg{
+    width: 2.5%;
+    height: 2.5%;
 }
 
 li{
@@ -140,6 +153,11 @@ li{
 }
 
 #add2{
+    margin-top: 10px;
+    display: -webkit-flex;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
     background: #F9F8F5;
 }
@@ -147,4 +165,21 @@ li{
 #add3{
     font-size: 36px;
     top: 35px;
+}
+
+.href{
+    font-family: GothamProLight;
+    padding: 1px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+}
+
+#href2{
+    font-family: GothamProLight;
+    padding: 1px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
 }
