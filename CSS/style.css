@@ -5,24 +5,40 @@
     font-weight: 300;
 }
 
-/*#header1{
+.header{
+    font-family: GothamProLight;
+    text-decoration: none;
+    color: #000000;  
+}
 
+/*#header1{
+    font-family: GothamProLight;
+    text-decoration: none;
+    color: #000000;
 }
 
 #header2{
-
+    font-family: GothamProLight;
+    text-decoration: none;
+    color: #000000;
 }
 
 #header3{
-
+    font-family: GothamProLight;
+    text-decoration: none;
+    color: #000000;
 }
 
 #header4{
-
+    font-family: GothamProLight;
+    text-decoration: none;
+    color: #000000;
 }
 
 #header5{
-
+    font-family: GothamProLight;
+    text-decoration: none;
+    color: #000000;
 }*/
 
 h1{
@@ -38,6 +54,10 @@ h1{
     color: #000000;
     margin: 0px 10px;
     text-decoration: none;
+}
+
+p{
+    font-family: GothamProLight;
 }
 
 #img1{
@@ -182,4 +202,25 @@ li{
     color: #000000;
     font-size: 18px;
     text-align: center;
+}
+
+#img3{
+    display: block;
+    margin-left: auto;    
+    margin-right: auto;
+}
+
+#add4{
+    font-family: GothamProLight;
+    text-align: center;
+    font-weight: bold;
+}
+
+#add5{
+    font-family: GothamProLight;
+    text-align: center;
+}
+
+.label{
+    font-family: GothamProLight;
 }
