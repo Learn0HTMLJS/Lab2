@@ -5,41 +5,30 @@
     font-weight: 300;
 }
 
+:root{
+    --AddText_color: #647382;
+    --MainText_color: #000000;
+    --DivBack_Color: #F9F8F5;
+}
+
+#head{
+    margin-top: 10px;
+    display: -webkit-flex;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--DivBack_Color);
+}
+
 .header{
     font-family: GothamProLight;
     text-decoration: none;
-    color: #000000;  
+    color: var(--MainText_color);  
+    display: inline-flex;
+    flex-direction: column;
 }
-
-/*#header1{
-    font-family: GothamProLight;
-    text-decoration: none;
-    color: #000000;
-}
-
-#header2{
-    font-family: GothamProLight;
-    text-decoration: none;
-    color: #000000;
-}
-
-#header3{
-    font-family: GothamProLight;
-    text-decoration: none;
-    color: #000000;
-}
-
-#header4{
-    font-family: GothamProLight;
-    text-decoration: none;
-    color: #000000;
-}
-
-#header5{
-    font-family: GothamProLight;
-    text-decoration: none;
-    color: #000000;
-}*/
 
 h1{
     font-family: GothamProLight;
@@ -51,7 +40,7 @@ h1{
     font-size: 60px;
     line-height: 116%;
     padding-left: 197px;
-    color: #000000;
+    color: var(--MainText_color);
     margin: 0px 10px;
     text-decoration: none;
 }
@@ -67,14 +56,22 @@ p{
     top: 0px;
 }
 
+.miniflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+}
+
 .tag{
+    display: inline-flex;
     font-family: GothamProLight;
     border: 1px;
     border-style: solid;
-    border-color: #647382;
+    border-color: var(--AddText_color);
     padding: 1px;
-    color: #647382;
-    border-radius: 3px;
+    color: var(--AddText_color);
+    border-radius: 2px;
     text-decoration: none;
 }
 
@@ -82,15 +79,11 @@ p{
     font-family: GothamProLight;
     width: 899px;
     left: 0px;
-/*    top: 2px;*/
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 18px;
     line-height: 180%;
-    color: #000000;
-    /*flex: none;
-    order: 1;
-    flex-grow: 0;*/
+    color: var(--MainText_color);
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -98,16 +91,11 @@ p{
 
 .NotMainText{
     font-family: GothamProLight;
-    color: #000000;
-}
-
-:root{
-    --MainText_color: #647382;
+    color: var(--MainText_color);
 }
 
 .Under{
     font-family: GothamProLight;
-/*   color:var(--MainText_color);*/
     font-weight: bold;
     text-decoration: underline;
 }
@@ -118,11 +106,9 @@ p{
     height: 252px;
     left: 0px;
     top: 0px;
-  /*  font-style: normal;
-    font-weight: normal;*/
     font-size: 36px;
     line-height: 116%;
-    color: var(--MainText_color);
+    color: var(--AddText_color);
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -134,13 +120,12 @@ p{
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-around;
 }
 
 .divCard{
-    display: -webkit-inline-flex;
     display: inline-flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #div1{
@@ -150,7 +135,6 @@ p{
 
 #div2{
     flex-basis: 80%;
-/*    margin-left: 10%;*/
 }
 
 #smallbox{
@@ -164,8 +148,14 @@ p{
 }
 
 .hrefimg{
-    width: 2.5%;
-    height: 2.5%;
+    width: 25%;
+    height: 25%;
+}
+
+.hrefimg2{
+    padding-top: 10px;
+    width: 20%;
+    height: 20%;
 }
 
 li{
@@ -179,7 +169,7 @@ li{
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    background: #F9F8F5;
+    background-color: var(--DivBack_Color);
 }
 
 #add3{
@@ -191,7 +181,7 @@ li{
     font-family: GothamProLight;
     padding: 1px;
     text-decoration: none;
-    color: #000000;
+    color: var(--MainText_color);
     font-size: 18px;
 }
 
@@ -199,7 +189,7 @@ li{
     font-family: GothamProLight;
     padding: 1px;
     text-decoration: none;
-    color: #000000;
+    color: var(--MainText_color);
     font-size: 18px;
     text-align: center;
 }
@@ -208,6 +198,30 @@ li{
     display: block;
     margin-left: auto;    
     margin-right: auto;
+}
+
+.date{
+    font-family: GothamProLight;
+    color: var(--AddText_color);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.SmallH{
+    font-family: GothamProLight;
+    font-weight: bold;
+    font-size: 31px;
+}
+
+.time{
+    font-family: GothamProLight;
+    color: var(--AddText_color);
+    font-size: 18px;
+}
+
+#add6{
+    font-family: GothamProLight;
+    color: var(--AddText_color);
 }
 
 #add4{
@@ -222,5 +236,15 @@ li{
 }
 
 .label{
+    text-align: center;
     font-family: GothamProLight;
+}
+
+.none{
+    list-style-type: none;
+}
+
+#subscribe{
+    font-family: GothamProLight;
+
 }
