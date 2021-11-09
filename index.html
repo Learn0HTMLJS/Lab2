@@ -64,7 +64,6 @@
             Однако, когда вы получаете хорошо отмастеренную, она может быть просто великолепной, 
             и тогда начинается все самое интересное!
         </p>  
-		<!-- bjklkjhg -->
         <div class="div_main">
             <div class="divCard">
                 <img  src="img/Rectangle112.svg" alt="2 photo" />                  
@@ -101,7 +100,6 @@
                 </ol>
 			</div>
         </div>
-        <!--Доделать--> 
         <p class="MainText">
             Если вы хотите взглянуть на наш полный плейлист, вы можете просмотреть его на <span class="Under"> YouTube </span> 
             или <span class="Under"> Spotify </span>. Последний же плейлист прикреплен прямо внизу под этим текстом!
@@ -112,14 +110,17 @@
         </p>
         <div id="add2">
             <div class="divCard">
-				<p> Мастерство изготовления </p>
-                <p id="add3"> Натуральный массив </p>                    
-                <p id="add6">
-                    Изготовленный из твердых 40-миллиметровых клепок из твердой древесины для каждого яруса, 
-                    он обеспечивает жесткость и стабильность, такая плотность в стойке Hi-Fi позволяет поглощать 
-                    вибрацию через оборудование.
-                </p>
-                <a href="" class="href"> Перейти в конфигуратор </a>
+                <div class="sw">
+				    <p> Мастерство изготовления </p>
+                    <p id="add3"> Натуральный массив </p>    
+                    <p>&mdash;</p>                
+                    <p id="add6">
+                        Изготовленный из твердых 40-миллиметровых клепок из твердой древесины для каждого яруса, 
+                        он обеспечивает жесткость и стабильность, такая плотность в стойке Hi-Fi позволяет поглощать 
+                        вибрацию через оборудование.
+                    </p>
+                    <a href="" class="href"> Перейти в конфигуратор  &rarr; </a>
+                </div>
             </div>
             <div class="divCard">
                 <img src="img/Rectangle104.svg" alt="2 photo" />                      
@@ -134,10 +135,10 @@
                 <p class="SmallH"> Технологии шумоподавления </p>      
                 <p class="time"> читать 7 минут </p>     
                 <div class="miniflex"> 
-                    <a href="" class="tag">Статья</a>
-                    <a href="" class="tag">Звук</a>
-                    <a href="" class="tag">Технологии</a>
-                    <a href="" class="tag">Мастерство</a> 
+                    <a href="" class="tag"> Статья </a>
+                    <a href="" class="tag"> Звук </a>
+                    <a href="" class="tag"> Технологии </a>
+                    <a href="" class="tag"> Мастерство </a> 
                 </div>
             </div>
             <div class="divCard">
@@ -166,23 +167,33 @@
                 </div>   
             </div>
         </div>
-        <img id="img3" src="img/Group147.svg" alt="2 photo" />            
-        <p id="add4">Оставайтесь на связи</p>
-        <p id="add5">
-            Подпишитесь на нашу рассылку, чтобы получать новости о продуктах и обновлениях, отвечающих Вашим предпочтениям, 
-            а так же приглашения на эксклюзивные мероприятия
-        </p>
-        <label class="label"> Email <input type="text" required></label>
-        <button id="subscribe"> Подписаться </button>     
+        <div id="center">
+            <img id="img3" src="img/Group147.svg" alt="2 photo" />            
+            <p id="add4">Оставайтесь на связи</p>
+            <p id="add5">
+                Подпишитесь на нашу рассылку, чтобы получать новости о продуктах и обновлениях, отвечающих Вашим предпочтениям, 
+                а так же приглашения на эксклюзивные мероприятия
+            </p>
+            <div class="label">
+                <label> Email <input type="email" required></label>
+                <div>
+                    <button id="subscribe"> Подписаться &rarr; </button>  
+                </div>
+            </div>
+        </div>   
     </main>
     <footer>
         <div class="div_main">
             <div class="divCard">
                 <img src="img/Frame287.svg" alt="Audio shelf" />
+                <select name="Lang" id="Lang">
+                    <option value="rus" selected> <img src="img/RU.svg"> RU </option>
+                    <option value="eng"> EN </option>
+                </select>
             </div>
             <div class="divCard">
                 <ol>
-                    <li class="none"><a>Смотрите</a></li>
+                    <li class="none"><p class="minH">Смотрите</p></li>
                     <li class="none"><a class="href" href="">Товары</a></li>
                     <li class="none"><a class="href" href="">Услуги</a></li>
                     <li class="none"><a class="href" href="">Блог</a></li>
@@ -191,14 +202,14 @@
             </div>
             <div class="divCard">
                 <ul>
-                    <li class="none"><a>Обслуживание клиентов</a></li>
+                    <li class="none"><p class="minH">Обслуживание клиентов</p></li>
                     <li class="none"><a class="href" href="">Свяжитесь с нами</a></li>
                     <li class="none"><a class="href" href="">Политика конфиденциальности</a></li>
                 </ul>
             </div>
             <div class="divCard">
                 <ul>
-                    <li class="none"><a>Политика конфиденциальности</a></li>
+                    <li class="none"><p class="minH">Политика конфиденциальности</p></li>
                     <li class="none"><a class="href" href="">8 (800) 200-46-66</a></li>
                     <li class="none"><a class="href" href="">auioshells@gmail.com</a></li>
                     <div>
@@ -209,6 +220,7 @@
                 </ul>        
             </div>
         </div>
+        <p>&copy; 2020 Audioshells</p>
     </footer>
 </body>
 </html>

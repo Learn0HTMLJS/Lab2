@@ -73,6 +73,8 @@ p{
     color: var(--AddText_color);
     border-radius: 2px;
     text-decoration: none;
+    margin-left: 2px;
+    margin-top: 2px;
 }
 
 .MainText {
@@ -126,6 +128,13 @@ p{
 .divCard{
     display: inline-flex;
     flex-direction: column;
+}
+
+h2{
+    font-family: Gotham Pro;
+    font-size: 60px;
+    font-weight: lighter;
+    text-decoration: none;
 }
 
 #div1{
@@ -192,6 +201,7 @@ li{
     color: var(--MainText_color);
     font-size: 18px;
     text-align: center;
+    margin: 0 auto;
 }
 
 #img3{
@@ -219,9 +229,16 @@ li{
     font-size: 18px;
 }
 
+.sw{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
 #add6{
     font-family: GothamProLight;
     color: var(--AddText_color);
+    text-align: left;
+    margin: 0 auto;
 }
 
 #add4{
@@ -230,21 +247,42 @@ li{
     font-weight: bold;
 }
 
+#center{
+    margin: 0 auto;
+    width: 900px;
+}
+
 #add5{
     font-family: GothamProLight;
     text-align: center;
 }
 
 .label{
+    align-self: center;
     text-align: center;
     font-family: GothamProLight;
+    margin: 0 auto;
 }
 
 .none{
     list-style-type: none;
+    margin-top: 25px;
 }
 
 #subscribe{
     font-family: GothamProLight;
+    margin-top: 56px;
+}
 
+footer{
+    background-color: var(--DivBack_Color);
+    margin-top: 120px;
+}
+
+.minH{
+    font-weight: bold;    
+}
+
+#Lang{
+    margin-top: 25px;
 }
