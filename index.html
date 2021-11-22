@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab2</title>
     <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!--   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="CSS/style.css"/>
 </head>
 <body>
@@ -31,7 +31,7 @@
                 <p>читать 6 минут</p>
                 <a href="" class="tag">Звук</a>
                 <a href="" class="tag">Времена</a>
-                <div id="smallbox">
+                <div class="smallbox">
                     <a href=""><img class="hrefimg" src="img/Group142.svg" alt="smth" /></a>  
                     <a href=""><img class="hrefimg" src="img/Group143.svg" alt="smth" /></a>  
                     <a href=""><img class="hrefimg" src="img/Group146.svg" alt="smth" /></a>  
@@ -67,41 +67,42 @@
             Однако, когда вы получаете хорошо отмастеренную, она может быть просто великолепной, 
             и тогда начинается все самое интересное!
         </p>  
-        <div class="div_main">
-            <div class="divCard">
-                <img  src="img/Rectangle112.svg" alt="2 photo" />                  
+        <div id="shit">
+            <div class="div_main">
+                <div class="divCard">
+                    <img src="img/Rectangle112.svg" alt="2 photo" />                  
+                </div>
+                <div class="divCard">
+                    <p class="MainText">
+                        Мы составили плейлист с нашими рекомендациями и любимыми треками для тестирования вашего Hi-Fi оборудования, 
+                        некоторые из мелодий, которые нам нравятся.
+                    </p>
+                </div>
+            </div>		
+            <div class="div_main">
+                <div class="divCard">
+                    <p> Также послушайте </p>
+                    <ul>
+                        <li>Bach: Mass in B minor — Kyrie I - Herreweghe</li>
+                        <li>Brian Eno — Ikebukuro</li>
+                        <li>The Kilimanjaro Darkjazz Ensemble — Cotard Delusion</li>
+                        <li>NRSB-11 - 685-471 2</li>
+                        <li>Resynthesis (3D Binaural Audio) by Max Cooper and Kevin McGloughlin</li>
+                        <li>Sickdisco - Aliens Eating People</li>
+                    </ul>
+		    	</div>
+                <div class="divCard">
+                    <p> Также послушайте </p>
+                    <ol>
+                        <li>Bach: Mass in B minor — Kyrie I - Herreweghe</li>
+                        <li>Brian Eno — Ikebukuro</li>
+                        <li>The Kilimanjaro Darkjazz Ensemble — Cotard Delusion</li>
+                        <li>NRSB-11 - 685-471 2</li>
+                        <li>Resynthesis (3D Binaural Audio) by Max Cooper and Kevin McGloughlin</li>
+                        <li>Sickdisco - Aliens Eating People</li>
+                    </ol>
+		    	</div>
             </div>
-            <div class="divCard">
-                <p class="MainText">
-                    Мы составили плейлист с нашими рекомендациями и любимыми треками для тестирования вашего Hi-Fi оборудования, 
-                    некоторые из мелодий, которые нам нравятся.
-                </p>
-            </div>
-        </div>
-		
-        <div class="div_main">
-            <div class="divCard">
-                <p> Также послушайте </p>
-                <ul>
-                    <li>Bach: Mass in B minor — Kyrie I - Herreweghe</li>
-                    <li>Brian Eno — Ikebukuro</li>
-                    <li>The Kilimanjaro Darkjazz Ensemble — Cotard Delusion</li>
-                    <li>NRSB-11 - 685-471 2</li>
-                    <li>Resynthesis (3D Binaural Audio) by Max Cooper and Kevin McGloughlin</li>
-                    <li>Sickdisco - Aliens Eating People</li>
-                </ul>
-			</div>
-            <div class="divCard">
-                <p> Также послушайте </p>
-                <ol>
-                    <li>Bach: Mass in B minor — Kyrie I - Herreweghe</li>
-                    <li>Brian Eno — Ikebukuro</li>
-                    <li>The Kilimanjaro Darkjazz Ensemble — Cotard Delusion</li>
-                    <li>NRSB-11 - 685-471 2</li>
-                    <li>Resynthesis (3D Binaural Audio) by Max Cooper and Kevin McGloughlin</li>
-                    <li>Sickdisco - Aliens Eating People</li>
-                </ol>
-			</div>
         </div>
         <p class="MainText">
             Если вы хотите взглянуть на наш полный плейлист, вы можете просмотреть его на <span class="Under"> YouTube </span> 
@@ -129,7 +130,7 @@
                 <img src="img/Rectangle104.svg" alt="2 photo" />                      
             </div>
         </div>
-        <a href="" id="href2"> Назад к списку статей </a>
+        <div id="href2"> <a href="" id="href2_2"> &larr; Назад к списку статей </a> </div>
         <h2>Похожие новости</h2>
         <div class="div_main">
             <div class="divCard">
@@ -188,7 +189,7 @@
     <footer>
         <div class="div_main">
             <div class="divCard">
-                <img src="img/Frame287.svg" alt="Audio shelf" />
+                <img id="LogoBottomn" src="img/Frame287.svg" alt="Audio shelf" />
                 <select name="Lang" id="Lang">
                     <option value="rus" selected> <img src="img/RU.svg"> RU </option>
                     <option value="eng"> EN </option>
@@ -213,9 +214,9 @@
             <div class="divCard">
                 <ul>
                     <li class="none"><p class="minH">Политика конфиденциальности</p></li>
-                    <li class="none"><a class="href" href="">8 (800) 200-46-66</a></li>
-                    <li class="none"><a class="href" href="">auioshells@gmail.com</a></li>
-                    <div>
+                    <li class="none"><a class="href" href=""> <img src="img/phoneicon2.svg" alt="Phone"/> 8 (800) 200-46-66</a></li>
+                    <li class="none"><a class="href" href=""> <img src="img/email.svg" alt="Email"/> auioshells@gmail.com</a></li>
+                    <div class="smallbox">
                         <a href=""><img class="hrefimg2" src="img/Group142.svg" alt="smth" /></a>  
                         <a href=""><img class="hrefimg2" src="img/Group143.svg" alt="smth" /></a>  
                         <a href=""><img class="hrefimg2" src="img/Group146.svg" alt="smth" /></a>  
@@ -223,7 +224,7 @@
                 </ul>        
             </div>
         </div>
-        <p> &copy; 2020 Audioshells </p>
+        <p id="Registred"> &copy; 2020 Audioshells </p>
     </footer>
 </body>
 </html>

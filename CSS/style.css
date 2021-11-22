@@ -39,7 +39,6 @@ h1{
     font-weight: 300;
     font-size: 60px;
     line-height: 116%;
-    padding-left: 197px;
     color: var(--MainText_color);
     margin: 0px 10px;
     text-decoration: none;
@@ -69,7 +68,7 @@ p{
     border: 1px;
     border-style: solid;
     border-color: var(--AddText_color);
-    padding: 1px;
+    padding: 15px;
     color: var(--AddText_color);
     border-radius: 2px;
     text-decoration: none;
@@ -79,10 +78,8 @@ p{
 
 .MainText {
     font-family: GothamProLight;
-    width: 899px;
-    left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    width: 70%;
+    margin-top: 25px;
     font-size: 18px;
     line-height: 180%;
     color: var(--MainText_color);
@@ -94,6 +91,11 @@ p{
 .NotMainText{
     font-family: GothamProLight;
     color: var(--MainText_color);
+}
+
+#shit{
+    width: 70%;
+    margin: 0 auto;
 }
 
 .Under{
@@ -117,12 +119,15 @@ p{
 }
 
 .div_main{
-    margin-top: 10px;
-    display: -webkit-flex;
+    margin-top: 50px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: row;
+    align-items: flex-start;
+  /*  margin-left: auto;
+    margin-right: auto;*/
     justify-content: space-around;
+
+    gap: 40px;
 }
 
 .divCard{
@@ -142,7 +147,8 @@ h2{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5;
 }
 
 #div1{
@@ -156,7 +162,7 @@ h2{
    margin: 0 auto;
 }
 
-#smallbox{
+.smallbox{
     padding-top: 10px;
 }
 
@@ -169,12 +175,14 @@ h2{
 .hrefimg{
     width: 25%;
     height: 25%;
+    
 }
 
 .hrefimg2{
     padding-top: 10px;
     width: 20%;
     height: 20%;
+    margin-right: 32px;
 }
 
 li{
@@ -205,19 +213,25 @@ li{
 }
 
 #href2{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px; 
+}
+
+#href2_2{
     font-family: GothamProLight;
     padding: 1px;
     text-decoration: none;
     color: var(--MainText_color);
     font-size: 18px;
-    text-align: center;
-    margin: 0 auto;
 }
 
 #img3{
     display: block;
     margin-left: auto;    
     margin-right: auto;
+    width: 120px;
+    height: 120px;
 }
 
 .date{
@@ -249,6 +263,7 @@ li{
     color: var(--AddText_color);
     text-align: left;
     margin: 0 auto;
+    margin-bottom: 60px;
 }
 
 #add4{
@@ -258,6 +273,7 @@ li{
 }
 
 #center{
+    padding-top: 120px;
     margin: 0 auto;
     width: 900px;
 }
@@ -265,9 +281,12 @@ li{
 #add5{
     font-family: GothamProLight;
     text-align: center;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .label{
+    padding-top: 25px;
     align-self: center;
     text-align: center;
     font-family: GothamProLight;
@@ -287,12 +306,25 @@ li{
 footer{
     background-color: var(--DivBack_Color);
     margin-top: 120px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 80px;
 }
 
 .minH{
     font-weight: bold;    
+    padding-bottom: 20px;
 }
 
 #Lang{
     margin-top: 25px;
+}
+
+#LogoBottomn{
+    margin-top: 20%;
+}
+
+#Registred{
+    margin-left: 5%;
+    padding-bottom: 5%;
 }
