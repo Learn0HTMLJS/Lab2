@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7</title>
+    <link rel="stylesheet" href="CSS/style.css"/>
+</head>
+<body>
+    <div class="MAIN">
+    <header>
+        <div id="head">
+            <a href="" class="header"> Товары </a>
+            <a href="forms.html" class="header"> Услуги </a>
+            <img src="img/Frame287.svg" alt="Audio shelf" id="header3" />
+            <a href="index.html" class="header"> Блог </a>
+            <a href="" class="header"> Контакты </a>
+        </div>
+    </header>
+    <main>
+        <fieldset>
+            <legend> Личные данные </legend>
+            <lable>Имя <input id="NAME" type="text" name="text-field" placeholder="Иван Иванов" required></lable>
+            <label>Дата рождения <input id="BIRTHDAY" type="date" name="date"></label>
+            <label> Пол </label>
+            <label><input id="SEXM" type="radio" name="radio" value="1">М</label>
+            <label><input id="SEXW" type="radio" name="radio" value="2">Ж</label>
+        </fieldset>
+        <fieldset>
+            <legend> Контактная информация </legend>
+            <label>Телефон <input id="PHONE" type="tel" name="tel"></label>
+            <label>e-mail <input id="EMAIL" type="email" name="email" placeholder="examp;e@domain.com"></label>
+            <select id="TIME" name="quantity" required>
+                <label> Какой интервал времени для связи удобен для Вас?
+                <option value="1">утро</option>
+                <option value="2">день</option>
+                <option value="3">вечер</option>
+                <option value="4" selected>ночь</option>
+                </label>
+            </select>
+        </fieldset>
+        <button type="reset" disabled>Сбросить</button>
+        <input type="submit" value="Отправить">
+    </main>
+    <footer class="">
+        <div id="div_main2">
+             <div class="divCard">
+                 <img id="LogoBottomn" src="img/Frame287.svg" alt="Audio shelf" />
+                 <select name="Lang" id="Lang">
+                     <option value="rus" selected> <img src="img/RU.svg"> RU </option>
+                     <option value="eng"> EN </option>
+                 </select>
+             </div>
+             <div class="divCard">
+                 <ol>
+                     <li class="none"><p class="minH">Смотрите</p></li>
+                     <li class="none"><a class="href" href="">Товары</a></li>
+                     <li class="none"><a class="href" href="">Услуги</a></li>
+                     <li class="none"><a class="href" href="">Блог</a></li>
+                     <li class="none"><a class="href" href="">Контакты</a></li>
+                 </ol>
+             </div>
+             <div class="divCard">
+                 <ul>
+                     <li class="none"><p class="minH">Обслуживание клиентов</p></li>
+                     <li class="none"><a class="href" href="">Свяжитесь с нами</a></li>
+                     <li class="none"><a class="href" href="">Политика конфиденциальности</a></li>
+                 </ul>
+             </div>
+             <div class="divCard">
+                 <ul>
+                     <li class="none"><p class="minH">Политика конфиденциальности</p></li>
+                     <li class="none"><a class="href" href=""> <img src="img/phoneicon2.svg" alt="Phone"/> 8 (800) 200-46-66</a></li>
+                     <li class="none"><a class="href" href=""> <img src="img/email.svg" alt="Email"/> auioshells@gmail.com</a></li>
+                     <div class="smallbox">
+                         <a href=""><img class="hrefimg2" src="img/Group142.svg" alt="smth" /></a>  
+                         <a href=""><img class="hrefimg2" src="img/Group143.svg" alt="smth" /></a>  
+                         <a href=""><img class="hrefimg2" src="img/Group146.svg" alt="smth" /></a>  
+                     </div>
+                 </ul>        
+             </div>
+         </div>
+         <p id="Registred"> &copy; 2020 Audioshells </p>
+     </footer>
+    </div>
+</body>
+</html>
