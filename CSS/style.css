@@ -11,23 +11,13 @@
     --DivBack_Color: #F9F8F5;
 }
 
-#head{
-    margin-top: 10px;
-    display: -webkit-flex;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-around;
-    align-items: center;
+header{
     background-color: var(--DivBack_Color);
 }
 
-.header{
-    font-family: GothamProLight;
-    text-decoration: none;
-    color: var(--MainText_color);  
-    display: inline-flex;
-    flex-direction: column;
+#header3{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 h1{
@@ -118,23 +108,6 @@ p{
     text-align: left;
 }
 
-.div_main{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    gap: 2%;
-    width: 100%;
-}
-
-.divCard{
-    display: inline-flex;
-    flex-direction: column;
-    flex-shrink: 2;
-    flex-grow: 2;
-}
-
 .fleximg{
     width: 100%;
     height: 100%;
@@ -143,7 +116,7 @@ p{
 }
 
 h2{
-    font-family: Gotham Pro;
+    font-family: GothamProLight;
     font-size: 60px;
     font-weight: lighter;
     text-decoration: none;
@@ -184,12 +157,7 @@ h2{
     height: 25%;    
 }
 
-.hrefimg2{
-    padding-top: 10px;
-    width: 20%;
-    height: 20%;
-    margin-right: 32px;
-}
+
 
 li{
     font-family: GothamProLight;
@@ -208,14 +176,6 @@ li{
 #add3{
     font-size: 36px;
     top: 35px;
-}
-
-.href{
-    font-family: GothamProLight;
-    padding: 1px;
-    text-decoration: none;
-    color: var(--MainText_color);
-    font-size: 18px;
 }
 
 #href2{
@@ -304,20 +264,15 @@ li{
     margin-top: 25px;
 }
 
-#subscribe{
-    font-family: GothamProLight;
-    margin-top: 56px;
-}
-
 footer{
+    background-color: var(--DivBack_Color);
     margin-top: 120px;
     width: 100%;
-    margin-bottom: 80px;
+ /*   margin-bottom: 80px;*/
     bottom: 5px;
 }
 
 #div_main2{
-    background-color: var(--DivBack_Color);
     margin: 0 auto;
     margin-top: 50px;
     display: flex;
@@ -328,22 +283,7 @@ footer{
     width: 90%;
 }
 
-.minH{
-    font-weight: bold;    
-    padding-bottom: 20px;
-}
-
 #Lang{
     margin-top: 25px;
 }
 
-#LogoBottomn{
-    margin: 0 auto;
-    margin-top: 20%;
-    width: 50%;
-}
-
-#Registred{
-    margin-left: 5%;
-    padding-bottom: 5%;
-}

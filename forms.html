@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 7</title>
     <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="stylesheet" href="CSS/forms.css"/>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/Common.css"/>   
+    <script src="SCRIPTS/controller.js"></script>
 </head>
 <body>
     <div class="MAIN">
@@ -13,40 +17,43 @@
         <div id="head">
             <a href="" class="header"> Товары </a>
             <a href="forms.html" class="header"> Услуги </a>
-            <img src="img/Frame287.svg" alt="Audio shelf" id="header3" />
+            <img src="img/Frame287.png" alt="Audio shelf" id="header3" />
             <a href="index.html" class="header"> Блог </a>
             <a href="" class="header"> Контакты </a>
         </div>
     </header>
     <main>
-        <fieldset>
-            <legend> Личные данные </legend>
-            <lable>Имя <input id="NAME" type="text" name="text-field" placeholder="Иван Иванов" required></lable>
-            <label>Дата рождения <input id="BIRTHDAY" type="date" name="date"></label>
-            <label> Пол </label>
-            <label><input id="SEXM" type="radio" name="radio" value="1">М</label>
-            <label><input id="SEXW" type="radio" name="radio" value="2">Ж</label>
-        </fieldset>
-        <fieldset>
-            <legend> Контактная информация </legend>
-            <label>Телефон <input id="PHONE" type="tel" name="tel"></label>
-            <label>e-mail <input id="EMAIL" type="email" name="email" placeholder="examp;e@domain.com"></label>
-            <select id="TIME" name="quantity" required>
-                <label> Какой интервал времени для связи удобен для Вас?
-                <option value="1">утро</option>
-                <option value="2">день</option>
-                <option value="3">вечер</option>
-                <option value="4" selected>ночь</option>
-                </label>
-            </select>
-        </fieldset>
-        <button type="reset" disabled>Сбросить</button>
-        <input type="submit" value="Отправить">
+        <form id="SUBMITION" form name="contact" method="POST" data-netlify="true">
+            <fieldset>
+                <legend> Личные данные </legend>
+                <lable>Имя <input id="NAME" type="text" name="text-field" placeholder="Иван Иванов" required></lable>
+                <label>Дата рождения <input id="BIRTHDAY" type="date" name="date"></label>
+                <label> Пол </label>
+                <label><input id="SEXM" type="radio" name="radio" value="1">М</label>
+                <label><input id="SEXW" type="radio" name="radio" value="2">Ж</label>
+            </fieldset>
+            <fieldset>
+                <legend> Контактная информация </legend>
+                <label>Телефон <input id="PHONE" type="tel" name="tel"></label>
+                <label>e-mail <input id="EMAIL" type="email" name="email" placeholder="examp;e@domain.com" required></label>
+                <select id="TIME" name="quantity" required>
+                    <label> Какой интервал времени для связи удобен для Вас?
+                    <option value="1">утро</option>
+                    <option value="2">день</option>
+                    <option value="3">вечер</option>
+                    <option value="4" selected>ночь</option>
+                    </label>
+                </select>
+            </fieldset>
+        </form>
+<!--        <button id="NULL" type="reset" disabled>Сбросить <script> Clear() </script> </button>-->
+        <button class="btn" id="NULL" type="reset" onclick="Click()">Сбросить </button>
+        <input class="btn" type="submit" value="Отправить" >
     </main>
-    <footer class="">
+    <footer>
         <div id="div_main2">
              <div class="divCard">
-                 <img id="LogoBottomn" src="img/Frame287.svg" alt="Audio shelf" />
+                 <img id="LogoBottomn" src="img/Frame287.png" alt="Audio shelf" />
                  <select name="Lang" id="Lang">
                      <option value="rus" selected> <img src="img/RU.svg"> RU </option>
                      <option value="eng"> EN </option>
@@ -74,9 +81,9 @@
                      <li class="none"><a class="href" href=""> <img src="img/phoneicon2.svg" alt="Phone"/> 8 (800) 200-46-66</a></li>
                      <li class="none"><a class="href" href=""> <img src="img/email.svg" alt="Email"/> auioshells@gmail.com</a></li>
                      <div class="smallbox">
-                         <a href=""><img class="hrefimg2" src="img/Group142.svg" alt="smth" /></a>  
-                         <a href=""><img class="hrefimg2" src="img/Group143.svg" alt="smth" /></a>  
-                         <a href=""><img class="hrefimg2" src="img/Group146.svg" alt="smth" /></a>  
+                         <a href=""><img class="hrefimg2" src="img/Group142.png" alt="Social Network 1" /></a>  
+                         <a href=""><img class="hrefimg2" src="img/Group143.png" alt="Social Network 2" /></a>  
+                         <a href=""><img class="hrefimg2" src="img/Group146.png" alt="Social Network 3" /></a>  
                      </div>
                  </ul>        
              </div>
