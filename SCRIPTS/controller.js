@@ -6,11 +6,17 @@ function Click()
 
 function Send()
 {
-    let forma = document.getElementById('SUBMITION');
-    let data = new FormData(forma);
-    fetch('/', {
+    document.querySelector("form").addEventListener("submit", handleSubmit);
+
+    const handleSubmit = (e) => {
+      e.preventDefault()
+      let myForm = document.getElementById('SUBMITION');
+      let formData = new FormData(myForm)
+      fetch('/', {
         method: 'POST',
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(data).toString()
-    }).then(() => console.log('Form successfully submitted')).catch((error) => alert(error))
+        body: new URLSearchParams(formData).toString()
+      }).then(() => console.log('Form successfully submitted')).catch((error) =>
+        alert(error))
+    }
 }
