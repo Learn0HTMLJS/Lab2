@@ -1,0 +1,58 @@
+.d{
+    margin: 2em;
+    padding: 2em;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.linear{
+    background-image: repeating-linear-gradient(
+        0.3turn,
+        rgba(255, 0, 0, 1) 0px 10px,
+        rgba(0, 0, 255, 1) 10px 20px
+    );
+}
+
+.radial {
+    background-image: radial-gradient(red, blue);
+  }
+  
+  .conic {
+    background-image: conic-gradient(
+      red,
+      orange,
+      yellow,
+      green,
+      aqua,
+      blue,
+      purple,
+      red
+    );
+}
+
+.rotation{
+  height: 50%;
+  width: 50%;
+  transform: rotate(30deg);
+}
+
+.rotation3{
+  transform: 
+    rotateX(55deg)
+    rotateY(60deg)
+    rotateZ(15deg);
+}
+
+.forgotten_expirement{
+  margin-top: 200px;
+  background-image: radial-gradient(red, blue);
+  background-image: conic-gradient(
+    orange,
+    yellow,
+    green,
+    aqua,
+    purple,
+    orange,
+  );
+}

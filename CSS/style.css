@@ -11,15 +11,6 @@
     --DivBack_Color: #F9F8F5;
 }
 
-header{
-    background-color: var(--DivBack_Color);
-}
-
-#header3{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 h1{
     font-family: GothamProLight;
 /*    width: 1233px;
@@ -33,10 +24,6 @@ h1{
     color: var(--MainText_color);
     margin: 0px 10px;
     text-decoration: none;
-}
-
-p{
-    font-family: GothamProLight;
 }
 
 #img1{
@@ -97,7 +84,7 @@ p{
 
 #add1{
     font-family: GothamProLight;
-    width: 80%;
+    width: 70%;
     left: 0px;
     top: 0px;
     font-size: 36px;
@@ -135,6 +122,7 @@ h2{
     flex-basis: 11%;
     border: 1px;
     margin-right: 10px;
+    margin-left: 10%;
 }
 
 #div2{
@@ -156,8 +144,6 @@ h2{
     width: 25%;
     height: 25%;    
 }
-
-
 
 li{
     font-family: GothamProLight;
@@ -258,32 +244,3 @@ li{
     font-family: GothamProLight;
     margin: 0 auto;
 }
-
-.none{
-    list-style-type: none;
-    margin-top: 25px;
-}
-
-footer{
-    background-color: var(--DivBack_Color);
-    margin-top: 120px;
-    width: 100%;
- /*   margin-bottom: 80px;*/
-    bottom: 5px;
-}
-
-#div_main2{
-    margin: 0 auto;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    gap: 2%;
-    width: 90%;
-}
-
-#Lang{
-    margin-top: 25px;
-}
-

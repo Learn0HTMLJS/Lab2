@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 7</title>
-    <link rel="stylesheet" href="CSS/style.css"/>
-    <link rel="stylesheet" href="CSS/forms.css"/>
-    <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/Common.css"/>   
-    <link rel="stylesheet" href="CSS/Lab8.css"/>   
-    <script src="SCRIPTS/controller.js"></script>
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="CSS/Lab9.css"/>
+    <title>Lab 9</title>
 </head>
 <body>
-    <div class="MAIN">
     <header>
         <div id="head">
-            <a href="demo.html" class="header"> Товары </a>
+            <a href="" class="header"> Товары </a>
             <a href="forms.html" class="header"> Услуги </a>
             <img src="img/Frame287.png" alt="Audio shelf" id="header3" />
             <a href="index.html" class="header"> Блог </a>
@@ -24,34 +20,18 @@
         </div>
     </header>
     <main>
-        <form id="SUBMITION" form name="contact" method="POST" data-netlify="true">
-            <fieldset>
-                <legend> Личные данные </legend>
-                <lable>Имя <input id="NAME" type="text" name="text-field" placeholder="Иван Иванов" required></lable>
-                <label>Дата рождения <input id="BIRTHDAY" type="date" name="date"></label>
-                <label> Пол 
-                    <label><input id="SEXM" type="radio" name="radio" value="1">М</label>
-                    <label><input id="SEXW" type="radio" name="radio" value="2">Ж</label>
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend> Контактная информация </legend>
-                <label>Телефон <input id="PHONE" type="tel" name="tel"></label>
-                <label>e-mail <input id="EMAIL" type="email" name="email" placeholder="example@domain.com" required></label>
-                <select id="TIME" name="quantity" required>
-                    <label> Какой интервал времени для связи удобен для Вас?
-                    <option value="1">утро</option>
-                    <option value="2">день</option>
-                    <option value="3">вечер</option>
-                    <option value="4" selected>ночь</option>
-                    </label>
-                </select>
-            </fieldset>
-        </form>
-<!--        <button id="NULL" type="reset" disabled>Сбросить <script> Clear() </script> </button>-->
-        <button class="btn" id="NULL" type="reset" onclick="Click()">Сбросить </button>
-        <button class="btn" id="NULL" type="reset" onclick="Click()">&#9993;  Отправить </button>
-  <!--      <input class="btn" type="submit" value="Отправить" >-->
+        <div class="div_main">
+            <div class="divCard">
+                <div class="d linear"></div>
+                <div class="d radial"></div>
+                <div class="d conic"></div>
+                <img class="rotation" src="img/box.png" alt="Представьте здесь коробку" />
+            </div>
+            <div class="divCard">
+                <img class="rotation3" src="img/box.png" alt="Представьте здесь коробку" />
+            </div>
+        </div>
+        <div class="d forgotten_expirement"></div>
     </main>
     <footer>
         <div id="div_main2">
@@ -93,6 +73,5 @@
          </div>
          <p id="Registred"> &copy; 2020 Audioshells </p>
      </footer>
-    </div>
 </body>
 </html>

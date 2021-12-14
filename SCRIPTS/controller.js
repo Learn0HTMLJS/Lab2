@@ -13,5 +13,4 @@ function Send()
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(data).toString()
     }).then(() => console.log('Form successfully submitted')).catch((error) => alert(error))
-
 }

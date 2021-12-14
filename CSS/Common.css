@@ -5,6 +5,12 @@
     font-weight: 300;
 }
 
+:root{
+    --AddText_color: #647382;
+    --MainText_color: #000000;
+    --DivBack_Color: #F9F8F5;
+}
+
 #head{
     margin-top: 10px;
     display: -webkit-flex;
@@ -62,10 +68,9 @@
     font-family: GothamProLight;
     margin-top: 56px;
     background-color: white;
-    padding: 5px;
+    padding: 11px;
     border: 1px;
     border-style: solid;
-    border-radius: 4px;
 }
 
 .minH{
@@ -79,4 +84,45 @@
     text-decoration: none;
     color: var(--MainText_color);
     font-size: 18px;
+}
+
+footer{
+    background-color: var(--DivBack_Color);
+    margin-top: 120px;
+    width: 100%;
+    margin-bottom: 1%;
+    bottom: 5px;
+}
+
+#div_main2{
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 2%;
+    width: 90%;
+}
+
+.none{
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+p{
+    font-family: GothamProLight;
+}
+
+header{
+    background-color: var(--DivBack_Color);
+}
+
+#header3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#Lang{
+    margin-top: 25px;
 }

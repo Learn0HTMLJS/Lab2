@@ -1,0 +1,43 @@
+:root{
+    --Hover_color: #AAAAAA;
+    --My_Yellow: #A4A454;
+    --Select_Color: #e9b61f;
+}
+
+.tag:hover{
+    background-color: var(--Hover_color);
+    color: black;
+    transition: all 3s;
+}
+
+.tag:focus{
+    border-color: var(--My_Yellow);
+    color: red;
+}
+
+.tag:active{
+    background-color: var(--My_Yellow);   
+}
+
+.btn:hover{
+    background-color: var(--Hover_color);
+    color: black;
+    transition: all 3s;
+}
+
+.btn:focus{
+    border-color: var(--My_Yellow);
+    color: red;
+}
+
+.btn:active{
+    background-color: var(--My_Yellow);   
+}
+
+p::selection{
+    background-color: var(--Select_Color);
+}
+
+body::-moz-selection{
+    background-color: var(--Select_Color);
+}
