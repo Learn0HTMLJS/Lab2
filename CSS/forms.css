@@ -5,19 +5,77 @@
     font-weight: 300;
 }
 
-body {
-	height: 100%;   
-}
-
-.MAIN{
+/* пребить через flex*/
+body{
     display: flex;
-	flex-direction: column;
+    flex-direction: column;
+
+/*	height: 100%;  */ 
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
+main{
     height: 50%;
+    flex: 1 0 auto;
+}
+
+#SUBMITION{
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.Cinput{
+    border-style: solid;
+    width: 80%;
+    font-family: GothamProLight;
+    text-align: left;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#BIRTHDAY{
+    border-style: solid;
+    width: 20%;
+    font-family: GothamProLight;
+    text-align: left;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.legend{
+    font-family: GothamProLight;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
+.label{
+    border-bottom: 1px solid black;
+    font-family: GothamProLight;
+    text-align: left;
+    width: 10%;
+}
+
+.in{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.star{
+    color: red;
+}
+
+#footer{
+/*    display: inline-flex;
+    margin-top: auto;
+    display: grid;*/
+    height: 10%;
     width: 100%;
+    flex: 1 0 auto;
 }
 

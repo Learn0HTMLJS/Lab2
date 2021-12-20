@@ -5,15 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 7</title>
-    <link rel="stylesheet" href="CSS/style.css"/>
     <link rel="stylesheet" href="CSS/forms.css"/>
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/Common.css"/>   
     <link rel="stylesheet" href="CSS/Lab8.css"/>   
-    <script src="SCRIPTS/controller.js"></script>
 </head>
 <body>
-    <div class="MAIN">
     <header>
         <div id="head">
             <a href="demo.html" class="header"> Товары </a>
@@ -24,43 +21,87 @@
         </div>
     </header>
     <main>
-        <form id="SUBMITION" form name="contact" method="POST" data-netlify="true">
+         <form id="SUBMITION" form name="contact" method="POST" data-netlify="true">
             <fieldset>
-                <legend> Личные данные </legend>
-                <lable>Имя <input id="NAME" type="text" name="text-field" placeholder="Иван Иванов" required></lable>
-                <label>Дата рождения <input id="BIRTHDAY" type="date" name="date"></label>
-                <label> Пол 
-                    <label><input id="SEXM" type="radio" name="radio" value="1">М</label>
-                    <label><input id="SEXW" type="radio" name="radio" value="2">Ж</label>
-                </label>
+                <legend class="legend"> Личные данные </legend>
+                <div class="in"> <lable class="label">Имя <span class="star">*</span> <input id="NAME" class="Cinput" type="text" name="text-field" placeholder="Иван Иванов" required></lable> </div>
+                <div class="in"> <label class="label">Дата рождения <input id="BIRTHDAY" type="date" name="date"></label> </div>
+                <div class="in"> <label class="label"> Пол 
+                    <label class="label"><input id="SEXM" type="radio" name="radio" value="1">М</label>
+                    <label class="label"><input id="SEXW" type="radio" name="radio" value="2">Ж</label>
+                    </label> 
+                </div>
+                <div class="in">
+                    <lable class="label">Пароль <span class="star">*</span>
+                    <input id="PASSWORD" class="Cinput" type="password" name="password" required>
+                    </lable> 
+                </div>
             </fieldset>
             <fieldset>
-                <legend> Контактная информация </legend>
-                <label>Телефон <input id="PHONE" type="tel" name="tel"></label>
-                <label>e-mail <input id="EMAIL" type="email" name="email" placeholder="example@domain.com" required></label>
-                <select id="TIME" name="quantity" required>
-                    <label> Какой интервал времени для связи удобен для Вас?
-                    <option value="1">утро</option>
-                    <option value="2">день</option>
-                    <option value="3">вечер</option>
-                    <option value="4" selected>ночь</option>
-                    </label>
-                </select>
+                <legend class="legend"> Контактная информация </legend>
+                <div class="in"> <label class="label">Телефон <input id="PHONE" class="Cinput" type="tel" name="tel" placeholder="8 888 888 88 88"></label> </div>
+                <div class="in"> 
+                    <label class="label">e-mail <span class="star">*</span> 
+                    <input id="EMAIL" class="Cinput" type="email" name="email" placeholder="example@domain.com" required></label>
+                </div>
+                <div class="in"> 
+                    <label class="label"> Какой интервал времени для связи удобен для Вас? <span class="star">*</span></label>
+                    <select class="list" id="TIME" name="quantity" required>
+                        <option value="1">утро</option>
+                        <option value="2">день</option>
+                        <option value="3">вечер</option>
+                        <option value="4" selected>ночь</option>                   
+                    </select> 
+                </div>
             </fieldset>
-            <button type="submit"> &#9993; Отправить </button>
+            <button type="reset" class="btn"> &#9114; Очистить </button>
+            <button type="submit" class="btn"> &#9993; Отправить </button>
+        </form>
+        <form>
+            <dl> 
+                <dt> псевдоклассы </dt> 
+                    <dd>
+                        Особый вид селектора, который уточняет тип или состояние. Обычно это какой-то качественный признак: реакция на наведение курсора, 
+                        порядок следования и другие.
+                    </dd>
+                <dt> псевдоэлементы </dt>            
+                    <dd> 
+                        Элементы, которых не существует в HTML-разметке, но действуют так, как если бы вы добавили в разметку целый новый HTML-элемент.
+                        Они создаются и позиционируются исключительно при помощи CSS.
+                        Чаще всего используются для создания различных декоративных элементов (которые не несут содержательного смысла).
+                    </dd>
+            </dl>
+            <label class="label"> псевдоклассы </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1" checked> :root </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1"> :link </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1"> :visited </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1" checked> :hover </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1" checked> :active </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1" checked> :focus </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1"> :first-child </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1"> :last-child </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1"> :nth-child(x) </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1"> :nth-last-child(x) </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1"> :only-child </label>
+            <div></div>
+            <label class="label"> псевдоэлементы </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1" checked> ::first-letter </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1"> ::first-line </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1" checked> ::selection </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1"> ::marker </label>
         </form>
 <!--        <button id="NULL" type="reset" disabled>Сбросить <script> Clear() </script> </button>
         <button class="btn" id="NULL" type="reset" onclick="Click()">Сбросить </button>
         <button class="btn" id="NULL" type="reset" onclick="Send()">&#9993;  Отправить </button>
         <input class="btn" type="submit" value="Отправить" >-->
     </main>
-    <footer>
+    <footer id="footer">
         <div id="div_main2">
              <div class="divCard">
                  <img id="LogoBottomn" src="img/Frame287.png" alt="Audio shelf" />
-                 <select name="Lang" id="Lang">
-                     <option value="rus" selected> <img src="img/RU.svg"> RU </option>
-                     <option value="eng"> EN </option>
+                 <select name="Lang" id="Lang" class="list">
+                     <option id="ru" value="rus" selected> RU </option>
+                     <option id="en" value="eng"> EN </option>
                  </select>
              </div>
              <div class="divCard">
@@ -93,7 +134,6 @@
              </div>
          </div>
          <p id="Registred"> &copy; 2020 Audioshells </p>
-     </footer>
-    </div>
+    </footer>
 </body>
 </html>

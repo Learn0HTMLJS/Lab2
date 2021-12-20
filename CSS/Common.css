@@ -126,3 +126,41 @@ header{
 #Lang{
     margin-top: 25px;
 }
+
+.emaili{
+    border-style: solid;
+    width: 60%;
+    font-family: GothamProLight;
+    text-align: left;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.emaill{
+    border-bottom: 1px solid black;
+    font-family: GothamProLight;
+    text-align: left;
+}
+
+.list{
+    font-family: GothamProLight;
+    background-color: white;
+    padding: 5px;
+    border: 1px;
+    border-style: solid;
+}
+
+#Lang{
+    margin: 0 auto;
+    background-color: var(--DivBack_Color);
+    font-family: GothamProLight;
+    margin-top: 56px;
+    border-style: none;
+    width: 20%;
+}
+
+#ru{
+    background: url('../img/RU.jpg') ; 
+}

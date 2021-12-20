@@ -12,11 +12,11 @@
 
 .tag:focus{
     border-color: var(--My_Yellow);
-    color: red;
 }
 
 .tag:active{
-    background-color: var(--My_Yellow);   
+ /*   background-color: var(--My_Yellow);   */
+    color: red;
 }
 
 .btn:hover{
@@ -27,11 +27,11 @@
 
 .btn:focus{
     border-color: var(--My_Yellow);
-    color: red;
 }
 
 .btn:active{
     background-color: var(--My_Yellow);   
+    color: red;
 }
 
 p::selection{
@@ -40,4 +40,70 @@ p::selection{
 
 body::-moz-selection{
     background-color: var(--Select_Color);
+}
+
+.emaili:active{
+    outline: none;
+    border-color: black;
+}
+
+.list:hover{
+    background-color: var(--Hover_color);
+    color: black;
+    transition: all 3s;
+}
+
+.list:active{
+    background-color: var(--My_Yellow);   
+}
+
+.list:focus{
+    border-color: var(--My_Yellow);
+    color: blue;
+}
+
+label::-moz-selection{
+    background-color: var(--Select_Color);
+}
+
+legend::-moz-selection{
+    background-color: var(--Select_Color);
+}
+
+label::selection{
+    background-color: var(--Select_Color);
+}
+
+legend::selection{
+    background-color: var(--Select_Color);
+}
+
+#SEXM:checked{
+    color: red;
+}
+
+#SEXW:active{
+    color: red;
+}
+
+.Cinput:valid{
+    color: green;
+}
+
+.Cinput:invalid{
+    color: red;
+}
+
+dd::before{
+    content: "\1F582";
+}
+
+dt::first-letter{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.inp2:checked{
+    text-decoration: line-through;
+    background-color: blue;
 }
