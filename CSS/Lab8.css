@@ -1,3 +1,10 @@
+@font-face { 
+    font-family: "GothamProLight";
+    src: url("../fonts/GothamProLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
 :root{
     --Hover_color: #AAAAAA;
     --My_Yellow: #A4A454;
@@ -70,7 +77,7 @@ legend::-moz-selection{
     background-color: var(--Select_Color);
 }
 
-label::selection{
+.label::selection{
     background-color: var(--Select_Color);
 }
 
@@ -78,13 +85,10 @@ legend::selection{
     background-color: var(--Select_Color);
 }
 
-#SEXM:checked{
+input[type="radio"]:checked ~ .Rinput {
     color: red;
-}
-
-#SEXW:active{
-    color: red;
-}
+    text-shadow: 0 0 3px black;
+  }
 
 .Cinput:valid{
     color: green;
@@ -106,4 +110,12 @@ dt::first-letter{
 .inp2:checked{
     text-decoration: line-through;
     background-color: blue;
+}
+
+.Cinput::placeholder{
+    font-family: GothamProLight;
+}
+
+.INP:focus{
+    color: red;
 }

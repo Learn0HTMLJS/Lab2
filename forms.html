@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/Common.css"/>   
     <link rel="stylesheet" href="CSS/Lab8.css"/>   
+    <link rel="stylesheet" href="CSS/Lab9.css"/>   
 </head>
 <body>
+    <div class="body">
     <header>
         <div id="head">
             <a href="demo.html" class="header"> Товары </a>
@@ -20,15 +22,19 @@
             <a href="" class="header"> Контакты </a>
         </div>
     </header>
-    <main>
+    <main class="main">
          <form id="SUBMITION" form name="contact" method="POST" data-netlify="true">
             <fieldset>
                 <legend class="legend"> Личные данные </legend>
-                <div class="in"> <lable class="label">Имя <span class="star">*</span> <input id="NAME" class="Cinput" type="text" name="text-field" placeholder="Иван Иванов" required></lable> </div>
-                <div class="in"> <label class="label">Дата рождения <input id="BIRTHDAY" type="date" name="date"></label> </div>
+                <div class="in"> 
+                    <lable class="label">Имя <span class="star">*</span> 
+                        <input id="NAME" class="Cinput" type="text" name="text-field" placeholder="Иван Иванов" required>
+                    </lable> 
+                </div>
+                <div class="in"> <label class="label">Дата рождения <input id="BIRTHDAY" class="Cinput" type="date" name="date"></label> </div>
                 <div class="in"> <label class="label"> Пол 
-                    <label class="label"><input id="SEXM" type="radio" name="radio" value="1">М</label>
-                    <label class="label"><input id="SEXW" type="radio" name="radio" value="2">Ж</label>
+                    <label class="label"><input class="Rinput" id="SEXM" type="radio" name="radio" value="1">М</label>
+                    <label class="label"><input class="Rinput" id="SEXW" type="radio" name="radio" value="2">Ж</label>
                     </label> 
                 </div>
                 <div class="in">
@@ -45,13 +51,14 @@
                     <input id="EMAIL" class="Cinput" type="email" name="email" placeholder="example@domain.com" required></label>
                 </div>
                 <div class="in"> 
-                    <label class="label"> Какой интервал времени для связи удобен для Вас? <span class="star">*</span></label>
+                    <label class="label"> Какой интервал времени для связи удобен для Вас? <span class="star">*</span>
                     <select class="list" id="TIME" name="quantity" required>
                         <option value="1">утро</option>
                         <option value="2">день</option>
                         <option value="3">вечер</option>
                         <option value="4" selected>ночь</option>                   
                     </select> 
+                    </label>
                 </div>
             </fieldset>
             <button type="reset" class="btn"> &#9114; Очистить </button>
@@ -89,13 +96,10 @@
             <label class="label"><input class="inp2" type="checkbox" value="1"> ::first-line </label>
             <label class="label"><input class="inp2" type="checkbox" value="1" checked> ::selection </label>
             <label class="label"><input class="inp2" type="checkbox" value="1"> ::marker </label>
+            <label class="label"><input class="inp2" type="checkbox" value="1" checked> ::placeholder </label>            
         </form>
-<!--        <button id="NULL" type="reset" disabled>Сбросить <script> Clear() </script> </button>
-        <button class="btn" id="NULL" type="reset" onclick="Click()">Сбросить </button>
-        <button class="btn" id="NULL" type="reset" onclick="Send()">&#9993;  Отправить </button>
-        <input class="btn" type="submit" value="Отправить" >-->
     </main>
-    <footer id="footer">
+    <footer class="footer">
         <div id="div_main2">
              <div class="divCard">
                  <img id="LogoBottomn" src="img/Frame287.png" alt="Audio shelf" />
@@ -135,5 +139,6 @@
          </div>
          <p id="Registred"> &copy; 2020 Audioshells </p>
     </footer>
+    </div>
 </body>
 </html>

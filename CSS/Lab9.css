@@ -18,7 +18,7 @@
     background-image: radial-gradient(red, blue);
   }
   
-  .conic {
+.conic {
     background-image: conic-gradient(
       red,
       orange,
@@ -55,4 +55,8 @@
     purple,
     orange,
   );
+}
+
+.legend{
+  text-shadow: 2px, 2px;
 }
