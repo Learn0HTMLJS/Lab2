@@ -1,0 +1,211 @@
+@font-face { 
+    font-family: "GothamProLight";
+    src: url("../fonts/GothamProLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+:root{
+    --AddText_color: #647382;
+    --MainText_color: #000000;
+    --DivBack_Color: #F9F8F5;
+}
+
+@media (max-width: 1024px) {
+    #head{
+       flex-direction: row;
+       font-size: 20px;
+    }
+    .header{
+       margin-top: 10px;
+       margin-bottom: 10px;
+    }
+    h1{
+       font-size: 30px;
+       text-align: left;
+       width: 90%;
+       margin: 0 auto;
+       margin-top: 10px;
+    }
+    #div_main1{
+       flex-direction: column;
+    }
+    .hrefimg{
+       width:  15%;
+       height: 15%;
+       margin-right: 10px;
+    }
+    #div1{
+        margin: 0 auto;
+        width: 60%;
+        text-align: center;
+        border-style: solid;
+        border-color: var(--AddText_color);
+        border-width: 1px;
+        border-radius: 5px;
+    }
+    p{
+       font-size: 25px;
+    }
+    #add1{
+       font-size: 25px;
+       width: 90%;
+    }
+    .MainText{
+       width: 90%;
+    }
+    #shit{
+       width: 100%;
+    }
+    .div_main{
+       flex-direction: row;
+       flex-wrap: wrap; 
+       width: 100%;
+       gap: 5px;
+       margin: 0 auto;
+    }
+    .news{
+       /* border-style: solid;
+       border-color: var(--AddText_color);
+       border-width: 1px;
+       border-radius: 2px; */
+       margin-top: 10px;
+       width: 40%;
+    }
+    .SmallH{
+        font-size: medium;
+    }
+    #center{
+       padding-top: 120px;
+       margin: 0 auto;
+       width: 100%;
+   }
+    #add5{
+       font-size: 15px;    
+       width: 95%;
+    }
+    #div_main2{
+       flex-direction: row;
+       flex-wrap: wrap; 
+    }
+    /* .divCard{
+       width: 100%;
+    } */
+    #LogoBottomn{
+        margin: 0 auto;
+        margin-top: 20%;
+        width: 60%;
+    }
+    .minH{
+        font-size: 20px;
+    }
+    #add2{
+       flex-direction: column;
+       gap: 15px;
+    }
+    #Lang{
+       width: 30%;
+       height: 30%;
+       border-width: 1px;
+       border-radius: 2px;
+    }
+    .fleximg{
+       width: 100%;
+       margin: 0 auto;
+    }
+    .hrefimg2{
+        width: 10%;
+        height: 10%;
+    }
+} 
+
+@media (max-width: 576px) {
+ #head{
+    flex-direction: column;
+    font-size: 25px;
+ }
+ .header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ #header3{
+    display: none;
+ }
+ h1{
+    font-size: 30px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+ }
+ #div_main1{
+    flex-direction: column;
+ }
+ .hrefimg{
+    width:  15%;
+    height: 15%;
+    margin-right: 10px;
+ }
+ p{
+    font-size: 25px;
+ }
+ #add1{
+    font-size: 25px;
+    width: 90%;
+ }
+ .MainText{
+    width: 90%;
+ }
+ #shit{
+    width: 100%;
+ }
+ .div_main{
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    margin: 0 auto;
+ }
+ .news{
+    border-style: solid;
+    border-color: var(--AddText_color);
+    margin-top: 10px;
+ /*   padding: 5px;*/
+    border-width: 1px;
+    border-radius: 2px;
+ }
+ #center{
+    padding-top: 120px;
+    margin: 0 auto;
+    width: 100%;
+}
+ #add5{
+    font-size: 15px;    
+    width: 95%;
+ }
+ #div_main2{
+    flex-direction: column;
+ }
+ #LogoBottomn{
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 80%;
+ }
+ .divCard{
+    width: 100%;
+ }
+ #add2{
+    flex-direction: column;
+    gap: 15px;
+ }
+ #Lang{
+    width: 30%;
+    height: 30%;
+    border-width: 1px;
+    border-radius: 2px;
+ }
+ .fleximg{
+    width: 100%;
+    margin: 0 auto;
+ }
+}
+
