@@ -11,7 +11,7 @@
     --DivBack_Color: #F9F8F5;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
     #head{
        flex-direction: row;
        font-size: 20px;

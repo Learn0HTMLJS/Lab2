@@ -12,7 +12,9 @@
         rgba(255, 0, 0, 1) 0px 10px,
         rgba(0, 0, 255, 1) 10px 20px
     );
-  transition: all 2s;
+    transition-property: padding-right;
+    transition-duration: 5s;
+    transition-timing-function: ease;
 }
 
 .radial {
@@ -36,7 +38,8 @@
   height: 50%;
   width: 50%;
   transform: rotate(30deg);
-  transition: all 2s ease-out;
+  transition-property:  transform;
+  transition-duration: 2s;
 }
 
 .rotation2{
